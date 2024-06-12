@@ -1,0 +1,3 @@
+[submodule "aa01-variables"]
+	path = aa01-variables
+	url = git@githum.com:maramkhah/App-Academy-Canvas.git
