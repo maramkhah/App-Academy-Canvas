@@ -6,7 +6,7 @@ Let's practice playing with comparison operators in JavaScript!
 //    than num1B.
 let num1A = 10;
 let num1B = 15;
-let expression1;
+let expression1= num1A<num1B;
 
 console.log(expression1); //=> true
 
@@ -19,7 +19,7 @@ console.log(expression1); //=> false
 //    strictly equal to num2B.
 let num2A = 10;
 let num2B = 10;
-let expression2;
+let expression2= num2A===num2B;
 
 console.log(expression2); //=> true
 
@@ -36,7 +36,7 @@ let num3B = 8;
 let num3C = 10;
 let expression3 = !num3A && num3B > num3C;
 
-let predictExpression3;
+let predictExpression3=false;
 
 // 4. Predict what the value of expression4 will be when printed
 //    to the console. Set predictExpression4 to the value that
@@ -45,7 +45,7 @@ let num4A = 2;
 let num4B = 5;
 let expression4 = num4B >= num4A || num4A !== 5;
 
-let predictExpression4;
+let predictExpression4=true;
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

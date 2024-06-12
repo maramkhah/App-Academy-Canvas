@@ -13,8 +13,8 @@ console.log('Welcome to App Academy!');
 // console.log('This is will not be printed to the terminal')
 // Try adding your own single line comments:
 // Your code here 
-//another comment
-//console.log("Single line comment added!")
+// another comment
+// console.log("Single line comment added!")
 
 /* 3.
 This is a multi-line comment.
