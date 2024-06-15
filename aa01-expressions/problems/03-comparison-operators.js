@@ -11,7 +11,7 @@ let expression1= num1A<num1B;
 console.log(expression1); //=> true
 
 num1A = 20;
-expression1;
+expression1 =num1A<num1B;
 
 console.log(expression1); //=> false
 
@@ -24,7 +24,7 @@ let expression2= num2A===num2B;
 console.log(expression2); //=> true
 
 num2B = '20';
-expression2;
+expression2= num2A===num2B;
 
 console.log(expression2); //=> false
 

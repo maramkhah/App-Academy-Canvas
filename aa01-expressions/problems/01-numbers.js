@@ -40,7 +40,7 @@ let predictExpression4= 65;
 let num5 = 14;
 let expression5 = num5++;
 
-let predictExpression5= 15;
+let predictExpression5= 14;
 
 // 6. Predict what the value of expression6 will be when printed
 //    to the console. Set predictExpression6 to the value that
