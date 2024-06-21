@@ -12,7 +12,7 @@ function caesarCipher(str, offset) {
     let index=0;
     for(let i=0;i<=str.length-1;i++){
          if(alphabet.includes(str[i])){
-            index = alphabet.search(str[i]);
+            index = alphabet.search(str[i]); 
             newString+=alphabet[index+offset];
          }
     }
