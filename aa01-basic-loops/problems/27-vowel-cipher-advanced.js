@@ -8,7 +8,7 @@ Vowels are the letters "a", "e", "i", "o", "u".
 // Your code here 
 
 function vowelCipher(str){
-    let vowels = ["a","e","i","o","u"];
+let vowels = ["a","e","i","o","u"];
 let replacement = ["e","i","o","u","a"];
 let newString='';
 let index=0;
