@@ -5,19 +5,21 @@ shifted num characters in the alphabet.
 
 Feel free to use this variable: let alphabet = "abcdefghijklmnopqrstuvwxyz";
 */
-
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
-let newString="";
+//Getting undefined if alphabet not extended.
 function caesarCipher(str, offset) {
-    for(let i=0;i<=str-1;i++){
+    let alphabet = "abcdefghijklmnopqrstuvwxyzabcd";
+    let newString="";
+    let index=0;
+    for(let i=0;i<=str.length-1;i++){
          if(alphabet.includes(str[i])){
-            newString+=alphabet[i+offset];
+            index = alphabet.search(str[i]);
+            newString+=alphabet[index+offset];
          }
     }
     return newString;
 }
 
- console.log(caesarCipher("apple", 1)); // "bqqmf"
+console.log(caesarCipher("apple", 1)); // "bqqmf"
  console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
  console.log(caesarCipher("zebra", 4)); // "difve"
 

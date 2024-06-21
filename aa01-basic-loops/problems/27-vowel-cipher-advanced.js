@@ -22,8 +22,8 @@ function vowelCipher(str){
    return newString;
 }
  console.log(vowelCipher("bootcamp")); // "buutcemp"
- console.log(vowelCipher("paper cup")); // "pepir cap"
- console.log(vowelCipher("Shayon"));
+ //console.log(vowelCipher("paper cup")); // "pepir cap"
+ //console.log(vowelCipher("Shayon"));
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = vowelCipher;
