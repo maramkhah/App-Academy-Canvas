@@ -8,14 +8,13 @@ more dots (.) than dashes (-).
 function moreDotLessDash(str){
     let dot=0;
     let dash=0;
-    for(let i=0;i<=str.length;i++){
+    for(let i=0;i<=str.length-1;i++){
         if(str[i]==="-"){
             dash++;
         }else if(str[i]==="."){
             dot++
         }
     }
-   
     if(dot>dash){
         return true;
     }else{return false;}
