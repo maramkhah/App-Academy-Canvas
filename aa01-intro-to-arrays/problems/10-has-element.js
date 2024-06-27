@@ -7,9 +7,13 @@ Solve this using a loop.
 
 // Your code here 
 function hasElement(array,target){
-
-      return array.includes(target);
-    
+      //return array.includes(target);
+      for(let i=0;i<=array.length;i++){
+            if(array[i]===target){
+                  return true;
+            }
+      }
+      return false;
 }
 
  console.log(hasElement(['a', 'b', 'c', 'e'], 'c')); // true

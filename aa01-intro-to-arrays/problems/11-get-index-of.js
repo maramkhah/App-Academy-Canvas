@@ -8,7 +8,14 @@ this using a loop.
 
 // Your code here 
 function getIndexOf(array,target){
-    return array.indexOf(target);
+    //return array.indexOf(target);
+    for(let i=0;i<=array.length;i++){
+        if(array[i]===target){
+            return i;
+        }
+    }
+    return -1;
+
 }
 
  console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
