@@ -5,13 +5,12 @@ Fibonacci sequence are 1; to generate subsequent numbers of the Fibonacci
 sequence, we take the sum of the previous two numbers of the sequence.
 */
 
+// Using recursion. Ternary operator test for base cases of fibonacci sequence.
 // Your code here 
-function fib(nth){
-    let array=[1,1];
-    for(let i=0;i<nth;i++){
-        array.push(array[i]+array[i+1]);
-    }
-    return array[nth-1];
+function fib(number){
+    return number < 1 ? 0
+            : number <=2 ? 1
+            : fib(number -1) + fib(number -2)
 }
 
  console.log(fib(1));    // 1
