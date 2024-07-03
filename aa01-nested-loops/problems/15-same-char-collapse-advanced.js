@@ -9,10 +9,19 @@ zzzxaaxy -> zxaaxy -> zxxy -> zy
 */
 
 // Your code here 
+function sameCharCollapse(string){
+    let regex = /(.)\1/g;
+    while(regex.test(string)){
+       string =string.replace(regex,"");
+    }
+    return string;
+}
 
-// console.log(sameCharCollapse("zzzxaaxy"));  // "zy"
+//search,match,replace
+
+ console.log(sameCharCollapse("zzzxaaxy"));  // "zy"
 // // because zzzxaaxy -> zxaaxy -> zxxy -> zy
-// console.log(sameCharCollapse("uqrssrqvtt")); // "uv"
+ console.log(sameCharCollapse("uqrssrqvtt")); // "uv"
 // // because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
