@@ -7,16 +7,21 @@ switched. See test cases for examples.
 //REWVIEW 
 // Your code here 
 function transpose(matrix){
-    let height = matrix.length;
-    let width = matrix[0].length;
+    let height = matrix.length;//number of rows
+    let width = matrix[0].length;//number of columns
 
-    for(let i=0;i<height;i++){
+    let transposeMatrix =[];
 
-        for(let j=0; j< width;j++){
-
-        }
+    for(let k=0; k< width;k++){
+      transposeMatrix[k]=[];
     }
-    return matrix;
+   
+    for(let i = 0;i < height; i++){
+      for(let j=0; j< width; j++){
+        transposeMatrix[j][i]=matrix[i][j];
+      }
+    }
+    return transposeMatrix;
 }
 
 
